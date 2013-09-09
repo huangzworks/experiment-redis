@@ -1403,6 +1403,7 @@ void selectCommand(redisClient *c);
 void randomkeyCommand(redisClient *c);
 void keysCommand(redisClient *c);
 void dbsizeCommand(redisClient *c);
+void dbnumCommand(redisClient *c);
 void lastsaveCommand(redisClient *c);
 void saveCommand(redisClient *c);
 void bgsaveCommand(redisClient *c);

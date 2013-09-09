@@ -322,6 +322,10 @@ void dbsizeCommand(redisClient *c) {
     addReplyLongLong(c,dictSize(c->db->dict));
 }
 
+void dbnumCommand(redisClient *c) {
+    addReplyLongLong(c, c->db->id);
+}
+
 void lastsaveCommand(redisClient *c) {
     addReplyLongLong(c,server.lastsave);
 }
